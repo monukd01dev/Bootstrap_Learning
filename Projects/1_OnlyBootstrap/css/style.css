@@ -1,0 +1,51 @@
+/* Logo Img Animation */
+.logo-img {
+  transition: transform 0.4s;
+}
+
+.logo-img:hover {
+  transform: rotate(-10deg);
+}
+
+/* slider size adjustment */
+#img-f,
+#img-s,
+#img-th,
+#img-fr {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+/* lil FAQ adjustment */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+button.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+
+
+/* media query */
+@media (min-width: 992px) {
+    #img-f,
+    #img-s,
+    #img-th,
+    #img-fr {
+      width: 100%;
+      height: 70vh;
+      object-position: 0 20%;
+    }
+  }
+  
+  @media (max-height: 590px) {
+    #img-f,
+    #img-s,
+    #img-th,
+    #img-fr {
+      min-height: 300px;
+    }
+  }

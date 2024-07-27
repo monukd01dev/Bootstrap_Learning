@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      id="home"
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body shadow sticky-top"
+    >
+      <div class="container-fluid col-xl-9 col-11">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" class="logo-img" width="50" alt="" />
+          <span class="ms-3 align-text-top fw-semibold">THE WORKER's</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#contactus"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#faq"
+                >FAQ's</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            id="img-f"
+            src="./images/slider-1.jpg"
+            class="d-block w-100"
+            alt="a person working in office"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Focused Office Productivity</h5>
+            <p>Focused Office ProductivityHarnessing the power of teamwork and dedication to achieve outstanding results in a professional office setting.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            id="img-s"
+            src="./images/slider-2.jpg"
+            class="d-block w-100"
+            alt="a person writing something on paper only hands visible"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Precision in Every Task</h5>
+            <p>Every task is executed with meticulous attention to detail, ensuring nothing is overlooked and quality is maintained.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            id="img-th"
+            src="./images/slider-3.jpg"
+            class="d-block w-100"
+            alt="a person watching some charts and plannigs"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Strategic Analysis</h5>
+            <p> Our strategic planning and analysis provide a solid foundation for successful project execution and decision-making.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            id="img-fr"
+            src="./images/slider-4.jpg"
+            class="d-block w-100"
+            alt="an old man working"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Expertise in Action</h5>
+            <p>Leveraging years of experience, our seasoned professionals deliver reliable and expert services tailored to your needs.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- start : container for other sections -->
+
+    <div class="container-fluid">
+
+    <!-- services -->
+      <section id="services">
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <h1 class="display-5">
+              Our Comprehensive Services
+            </h1>
+            <p>We offer a wide range of services to cater to your business needs.</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly pb-3 mt-md-3">
+          <div class="col-md-3 text-center mt-4">
+            <img src="./images/house.png" class="mb-4" width="80px" alt="" />
+            <h3>Staffing Solutions</h3>
+            <p>
+              Providing top talent to meet your temporary or permanent staffing requirements.
+            </p>
+          </div>
+          <div class="col-md-3 text-center mt-4">
+            <img src="./images/linkedin.png" class="mb-4" width="80px" alt="" />
+            <h3>Professional Networking</h3>
+            <p>
+              Connecting professionals with opportunities to advance their careers.
+            </p>
+          </div>
+          <div class="col-md-3 text-center mt-4">
+            <img src="./images/news.png" class="mb-4" width="80px" alt="" />
+            <h3>Consulting Services</h3>
+            <p>
+              Expert advice to help you navigate complex business challenges.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <!-- hr line -->
+      <hr />
+
+    <!-- about -->
+      <section id="about">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-5">
+            <img src="./images/growth.png" width="100%" />
+          </div>
+          <div class="col-md-5 mb-5">
+            <h4 class="mt-3">Growth</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-success" style="width: 80%"></div>
+            </div>
+
+            <h4 class="mt-3">Expertise</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Info example"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-info" style="width: 90%"></div>
+            </div>
+
+            <h4 class="mt-3">Industry Knowledge</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Warning example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-warning" style="width: 85%"></div>
+            </div>
+
+            <h4 class="mt-3">Client Satisfaction</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-danger" style="width: 95%"></div>
+            </div>
+
+            <h4 class="mt-3">Innovation</h4>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-info" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- contact-us -->
+      <section id="contactus">
+        <div
+          class="row justify-content-evenly pb-5"
+          style="background-color: #f1f1f1"
+        >
+          <!-- form -->
+          <div class="col-md-5 mt-5">
+            <h3 class="mb-4">Get in Touch</h3>
+            <form>
+              <div class="mb-3">
+                <label for="InputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" />
+              </div>
+              <div class="mb-3">
+                <label for="your-message" class="form-label"
+                  >Your Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="your-message"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+
+          <!-- map -->
+          <div class="col-md-5 mt-5">
+            <h3 class="mb-4">Address</h3>
+            <p>
+              123 Main Street Apt 4B <br />
+              Springfield, IL 62701 USA <br />
+              <i class="bi bi-telephone-fill"></i> Phone: (555) 123-4567
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223829.3212698338!2d77.02851597237698!3d28.769320789410695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1722021554844!5m2!1sen!2sin"
+              style="width: 100%"
+              height="280"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p></p>
+          </div>
+        </div>
+      </section>
+
+    <!-- FAQ -->
+      <section id="faq">
+        <div class="row justify-content-center py-5">
+          <div class="col-md-10">
+            <h3 class="mb-4 text-center">Frequently Asked Questions
+            </h3>
+            <!-- accordino -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                  What services do you offer?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We offer a range of services including staffing solutions, professional networking, and consulting services.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  How can I contact you?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can contact us via email at info@theworkers.com or call us at +123 456 7890.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  What are your business hours?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Our business hours are <strong>Monday to Friday</strong>, <strong>9:00 AM to 6:00 PM</strong>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+      <footer>
+        <div class="row justify-content-evenly text-white bg-dark pt-2 pb-3">
+          <div class="col-md-3 mt-4">
+            <h4 class="pb-2">
+              <img src="./images/logo.png" class="logo-img" width="50" alt="" />
+              <span class="ms-3 align-text-top fw-semibold">THE WORKER's</span>
+            </h4>
+            <p>
+              THE WORKER's is your trusted partner in workforce solutions, offering top-tier staffing, networking, and consulting services. Join our community and experience excellence.
+            </p>
+          </div>
+          <div class="col-md-3 mt-4">
+            <h4 class="pb-2">Important Links</h4>
+            <p>
+              <a href="#" class="link-light text-decoration-none d-block"
+                >Home</a
+              >
+              <a href="#" class="link-light text-decoration-none d-block"
+                >About Us</a
+              >
+              <a href="#" class="link-light text-decoration-none d-block"
+                >Contact Us</a
+              >
+              <a href="#" class="link-light text-decoration-none d-block"
+                >Our Team</a
+              >
+              <a href="#" class="link-light text-decoration-none d-block"
+                >Our Client</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 mt-4">
+            <h4 class="pb-2">Contact Us</h4>
+            <h5>Address</h5>
+            <p>
+              123 Main Street Apt 4B <br />
+              Springfield, IL 62701 USA <br />
+              <i class="bi bi-telephone-fill"></i> Phone: (555) 123-4567
+            </p>
+            <h5>Email</h5>
+            <p>info@theworkers.com</p>
+
+          </div>
+        </div>
+      </footer>
+
+    <!-- copyright -->
+      <section id="copyright">
+        <div class="row bg-secondary pt-3">
+          <div class="col-12 text-center text-white">
+            <p class="fs-6">&copy; 2024 THE WORKER's. All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+
+<!-- start : container for other sections -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
